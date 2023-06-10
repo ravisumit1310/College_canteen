@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Canteens</title>
+  <link rel="stylesheet" type="text/css" href="Canteen2.css">
+</head>
+
+<body>
+  <header>
+    <h1>North Canteen</h1>
+    <div class="navbar">
+      <a href="#home">About US</a>
+      <a href="#news">Info</a>
+      <div class="dropdown">
+        <button class="dropbtn">List
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <ul>
+            <li><a href="canteen1.html">South Canteen</a></li>
+            <li><a href="canteen2.html">North Canteen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <hr>
+
+  <main>
+    <h2>Menu</h2>
+    <ul id="menu">
+      <li><span><img src="biryani.png" alt="Burger icon">Biriyani</span><button class="button" data-name="Burger"
+          data-price="10" onclick="order(this)">Order</button>
+      </li>
+      <li><span><img src="chapati.png" alt="Pizza icon">Paratha</span><button class="button" data-name="Pizza"
+          data-price="12" onclick="order(this)">Order</button>
+      </li>
+      <li><span><img src="dosa.png" alt="Fries icon">Dosa</span><button class="button" data-name="Fries"
+          data-price="5" onclick="order(this)">Order</button>
+      </li>
+    </ul>
+    <hr>
+
+    <h2>Orders</h2>
+    <ul id="order-list">
+
+    </ul>
+    <hr>
+
+  </main>
+  <footer>
+    <p>&copy; 2023 Christ Canteens. All rights reserved.</p>
+  </footer>
+  <script src="Canteen2.js"></script>
+</body>
+</html>
